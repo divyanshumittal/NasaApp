@@ -1,0 +1,47 @@
+.SearchImages {
+  &__search-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  
+    input {
+      padding: 4px 6px;
+      width: 400px;
+    }
+    
+    button {
+      margin: 0 20px;
+      width: 100px;
+    }
+  }
+  
+  &__results {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  &__images-container {
+    column-count: 1;
+
+    img {
+      width: 100%;
+      margin: 0 0 10px;
+    }
+
+    @media (min-width: 600px) {
+      column-count: 2;
+    }
+
+    @media (min-width: 768px) {
+      column-count: 3;
+    }
+
+    @media (min-width: 992px) {
+      column-count: 4;
+    }
+
+    @media (min-width: 1200px) {
+      column-count: 5;
+    }
+  }
+}
